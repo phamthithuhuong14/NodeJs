@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Node js",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server2.js",
+    "start": "nodemon lab2.js"
+  },
+  "author": "phamhuong",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "joi": "^17.12.2",
+    "join": "^3.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "local-storage": "^2.0.0",
+    "mongoose": "^8.2.1",
+    "node-localstorage": "^3.0.5",
+    "nodemon": "^3.1.0"
+  }
+}
