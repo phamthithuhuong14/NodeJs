@@ -5,7 +5,7 @@ import { CheckBookValidate } from "../middleware/book.js";
 const routerBook = express.Router();
 routerBook.post("/books", async (req, res) => {
   const body = req.body;
-  const book = new Book(body);
+  const book = new Books(body);
   const response = await book.save();
   res.send(response);
 });
