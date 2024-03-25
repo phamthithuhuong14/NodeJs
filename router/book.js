@@ -29,9 +29,7 @@ routerBook.put("/books/:id", async (req, res) => {
 routerBook.delete("/books/:id", async (req, res) => {
   const id = req.params.id;
 
-  const response = await Books.findOneAndDelete({ _id: id }, body, {
-    new: true,
-  });
+  const response = await Books.findOneAndDelete({ _id: id });
   res.send(response);
 });
 export default routerBook;
